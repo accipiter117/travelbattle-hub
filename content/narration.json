@@ -1,288 +1,313 @@
 {
   "melee_stalemate": {
+    "status": "Held",
+    "tone": "neutral",
     "opening": [
-      "Both lines hold firm as the smoke clears.",
-      "Neither side yields an inch of ground.",
+      "Both lines exchange fire without decision.",
+      "Smoke hangs heavy as neither side gives way.",
       "The exchange settles into a grinding contest.",
-      "Muskets crack along the whole line without decision."
+      "Volleys crack back and forth along the line."
     ],
     "middle": [
-      "Officers on both sides call for another volley.",
-      "The ranks reload and brace for a renewed exchange.",
-      "No ground changes hands as the fight continues.",
-      "Both formations stand their ground under fire."
+      "The unit is {status}, and the contest will be settled next turn.",
+      "The unit is {status}, standing its ground amid the noise and smoke.",
+      "The unit is {status}, waiting for the next command to advance or fall back.",
+      "The unit is {status}, neither side willing to break first."
     ],
     "closing": [
-      "The contest will be settled next turn.",
-      "Both brigades hold their positions, for now.",
-      "The issue remains undecided.",
-      "The struggle continues without resolution."
+      "Nothing is decided here, not yet.",
+      "Both brigades draw breath before the next exchange.",
+      "The men reload in silence, watching the enemy line.",
+      "The outcome still hangs in the smoke."
     ]
   },
   "melee_pushback": {
+    "status": "Pushed Back",
     "win": {
+      "tone": "win",
       "opening": [
-        "The assault presses home with determination.",
-        "Your line surges forward under a hail of musketry.",
-        "Officers urge the attack on despite the fire.",
-        "The advance continues in the face of heavy resistance."
+        "Your men press on through the smoke and the dying.",
+        "The advance continues despite the cost.",
+        "Officers drive the attack forward against stubborn resistance.",
+        "Your ranks close the distance under fire."
       ],
       "middle": [
-        "The defending ranks begin to waver.",
-        "Discipline in the enemy formation starts to crack.",
-        "The opposing line gives ground under the pressure.",
-        "The defenders struggle to hold their position."
+        "The enemy unit is {status}, its line beginning to crack.",
+        "The enemy unit is {status}, discipline fraying under the pressure.",
+        "The enemy unit is {status}, its ranks staggering from the blow.",
+        "The enemy unit is {status}, ground yielding beneath its feet."
       ],
       "closing": [
-        "The enemy is pushed back and turned about in disorder.",
-        "Your men hold the advantage, for now.",
-        "A small but useful gain for the brigade.",
-        "The ground is yours, at least for this turn."
+        "A hard-won step toward the day's glory.",
+        "Momentum, at last, belongs to your brigade.",
+        "The enemy gives ground, and hope rises with it.",
+        "The advance holds, and the men feel it."
       ]
     },
     "loss": {
+      "tone": "loss",
       "opening": [
-        "The assault meets a determined volley.",
-        "Your advancing ranks are met with heavy fire.",
-        "The attack falters under the weight of return fire.",
-        "The formation presses forward into stiff resistance."
+        "Return fire cuts deep into the leading files.",
+        "The attack meets a wall of disciplined musketry.",
+        "Your men press forward into a storm of lead.",
+        "The advance stumbles under withering fire."
       ],
       "middle": [
-        "Discipline wavers in the leading files.",
-        "The line begins to buckle under the strain.",
-        "Officers struggle to hold the formation together.",
-        "The advance cannot be sustained under such fire."
+        "The unit is {status}, men falling where they stand.",
+        "The unit is {status}, its line staggering under the fire.",
+        "The unit is {status}, the wounded left where they fall.",
+        "The unit is {status}, its ranks thinning with every volley."
       ],
       "closing": [
-        "Your men are forced back a square and turned about.",
-        "The initiative slips, if only for a moment.",
-        "A setback the brigade will need to answer.",
-        "Ground is lost, though the formation remains intact."
+        "The advance falters, but the line still breathes.",
+        "A costly step backward, and the men know it.",
+        "Ground is lost, though not yet the will to fight.",
+        "The brigade absorbs the blow, grimly."
       ]
     }
   },
   "melee_rout": {
+    "status": "Routed",
     "win": {
+      "tone": "win",
       "opening": [
-        "The pressure finally tells on the enemy line.",
-        "Sustained fire breaks the defenders' resolve.",
-        "Your assault drives deep into the enemy formation.",
-        "The weight of the attack proves too much to bear."
+        "The enemy's nerve finally breaks under the weight of your fire.",
+        "Sustained volleys shatter the enemy's resolve.",
+        "The pressure of the attack proves too much to bear.",
+        "The enemy line can no longer answer your fire."
       ],
       "middle": [
-        "The enemy ranks dissolve into disorder.",
-        "Officers are seen trying, and failing, to rally their men.",
-        "The defending formation streams back toward its own lines.",
-        "Order collapses among the defenders."
+        "Their unit is {status}, streaming back in disorder.",
+        "Their unit is {status}, officers unable to hold the line.",
+        "Their unit is {status}, colours dragged back through the smoke.",
+        "Their unit is {status}, discipline gone entirely."
       ],
       "closing": [
-        "The enemy falls back to their board edge, their fate resting on a rally roll.",
-        "A significant blow has been struck against the enemy brigade.",
-        "The field begins to turn in your favour.",
-        "The enemy's resolve is broken, for now."
+        "The tide of the battle turns in your favour.",
+        "Victory feels close enough to touch.",
+        "The field belongs to your brigade, for now.",
+        "Your men press the advantage while it lasts."
       ]
     },
     "loss": {
+      "tone": "loss",
       "opening": [
-        "The attack collapses under sustained fire.",
-        "Your leading ranks are shattered by the volley.",
-        "The assault cannot withstand the weight of resistance.",
-        "The formation is caught in a storm of musketry."
+        "The line cannot hold against such fire.",
+        "Discipline breaks under the sheer weight of the volley.",
+        "Your men are driven back before they can answer.",
+        "The pressure proves too much for the ranks to bear."
       ],
       "middle": [
-        "Discipline gives way and the formation breaks.",
-        "Men stream back through the smoke in disorder.",
-        "Officers fail to hold the line together.",
-        "Order collapses among the attackers."
+        "The unit is {status}, the survivors fleeing for their lives.",
+        "The unit is {status}, its colours nearly lost in the retreat.",
+        "The unit is {status}, leaving the wounded behind.",
+        "The unit is {status}, order gone from the ranks."
       ],
       "closing": [
-        "Your unit falls back to the board edge, its fate resting on a rally roll.",
-        "A costly reverse for the brigade.",
-        "The initiative now lies with the enemy.",
-        "The brigade's line is thinner for it."
+        "Grief will follow the brigade long after the smoke clears.",
+        "A bitter reversal, and the men will not forget it.",
+        "The brigade's line grows thinner, and quieter.",
+        "The cost of this turn will be felt for many more."
       ]
     }
   },
   "melee_destroy": {
+    "status": "Destroyed",
     "win": {
+      "tone": "win",
       "opening": [
-        "The assault crashes home with overwhelming force.",
+        "The volley tears through the enemy ranks before they can answer.",
         "Your men press the attack without mercy.",
-        "The volley tears through the enemy ranks.",
-        "The attack strikes with devastating effect."
+        "The assault crashes home with overwhelming force.",
+        "There is no answer the enemy can give to this fire."
       ],
       "middle": [
-        "The defending formation is torn apart.",
-        "There is no answer to the ferocity of the attack.",
-        "The enemy line simply ceases to exist as a fighting force.",
-        "Resistance is overwhelmed in a matter of moments."
+        "Their unit is {status}, broken beyond recovery.",
+        "Their unit is {status}, scattered across the field.",
+        "Their unit is {status}, its colours trampled in the mud.",
+        "Their unit is {status}, wiped from the field in moments."
       ],
       "closing": [
-        "The enemy unit is removed from the field.",
-        "A decisive result for the brigade.",
-        "The enemy brigade suffers a grievous loss.",
-        "A hard blow, and a telling one."
+        "Victory feels close enough to touch.",
+        "A decisive blow, long remembered by both armies.",
+        "The enemy brigade will not soon recover from this.",
+        "The men know they have done something today."
       ]
     },
     "loss": {
+      "tone": "loss",
       "opening": [
-        "The attack is met with devastating fire.",
-        "Your assault is broken beyond recovery.",
-        "The enemy volley cuts the advance to pieces.",
-        "The formation walks into a wall of fire."
+        "The advance walks into a wall of musketry.",
+        "There is no answer to such concentrated fire.",
+        "The line cannot survive what comes next.",
+        "Your men march into a storm they cannot escape."
       ],
       "middle": [
-        "There is no rallying the shattered ranks.",
-        "The formation disintegrates under the weight of fire.",
-        "Officers and men alike are swept from the field.",
-        "Resistance proves far heavier than expected."
+        "The unit is {status}, torn apart in the open ground.",
+        "The unit is {status}, its ranks gone in a matter of moments.",
+        "The unit is {status}, nothing left to answer the enemy's fire.",
+        "The unit is {status}, the line simply ceasing to exist."
       ],
       "closing": [
-        "Your unit is removed from the field.",
-        "A heavy price paid for the attempt.",
-        "The brigade will feel this loss keenly.",
-        "A grievous blow to the brigade's strength."
+        "The bodies of your men litter the battlefield.",
+        "The brigade will carry this grief long after the guns fall silent.",
+        "Some losses cannot be counted in squares and turns.",
+        "Tonight there will be names read out that will not answer."
       ]
     }
   },
   "artillery_miss": {
+    "status": "Held",
+    "tone": "neutral",
     "opening": [
-      "The gun crew lays their piece with care.",
+      "The gun crew lays their piece with practiced care.",
       "Smoke and flame erupt from the muzzle.",
-      "The battery opens fire across the field.",
-      "The gunners find their aim and let fly."
+      "The battery opens fire across open ground.",
+      "The gunners take aim and let fly."
     ],
     "middle": [
-      "The shot falls short of its mark.",
-      "The round passes wide of the target.",
-      "Range and elevation conspire against the gunners.",
-      "The ball skips harmlessly past the formation."
+      "The target unit is {status}, the shot passing wide of its mark.",
+      "The target unit is {status}, the round falling short in the grass.",
+      "The target unit is {status}, untouched as the ball skips past.",
+      "The target unit is {status}, the range misjudged by the crew."
     ],
     "closing": [
-      "The target formation is unshaken.",
       "The gunners begin the work of reloading.",
-      "No damage is done, this time.",
-      "The battery will try again next turn."
+      "No harm done, not this time.",
+      "The battery will try again before the day is out.",
+      "The target marches on, unaware how close the shot came."
     ]
   },
   "artillery_no_effect": {
+    "status": "Held",
+    "tone": "neutral",
     "opening": [
       "The battery finds its range.",
-      "Round shot bounds across the field toward the target.",
+      "Round shot bounds across the field toward the enemy line.",
       "The gun crew's aim proves true.",
-      "The shot is well laid and true to its mark."
+      "The shot is laid true and lands close."
     ],
     "middle": [
-      "The shot strikes home, but the formation holds firm.",
-      "The impact is felt, yet discipline does not break.",
-      "Ranks close up around the fallen without faltering.",
-      "The formation absorbs the blow and presses on."
+      "The enemy unit is {status}, the shot striking home without breaking their line.",
+      "The enemy unit is {status}, ranks closing around the fallen without faltering.",
+      "The enemy unit is {status}, shaken but not broken by the blow.",
+      "The enemy unit is {status}, absorbing the blow and pressing on."
     ],
     "closing": [
-      "The target unit carries on regardless.",
       "A near thing, but no lasting harm is done.",
-      "The formation presses on unshaken.",
-      "The line holds, for now."
+      "The enemy presses on, unshaken for now.",
+      "The gunners reload, hoping for a truer strike.",
+      "The line holds, though it will not hold forever."
     ]
   },
   "artillery_disrupt": {
+    "status": "Disrupted",
+    "tone": "win",
     "opening": [
-      "The battery's aim proves deadly accurate.",
-      "Round shot tears through the formation.",
-      "The gunners find their mark with brutal effect.",
-      "The shot lands square among the ranks."
+      "The battery's aim proves brutally accurate.",
+      "Round shot tears through the enemy ranks.",
+      "The gunners find their mark with terrible effect.",
+      "The shot lands square among the enemy's files."
     ],
     "middle": [
-      "Gaps open in the ranks as the shot strikes home.",
-      "The formation staggers under the impact.",
-      "Officers scramble to restore order in the ranks.",
-      "The line is shaken by the force of the blow."
+      "Their unit is {status}, unable to move and turned to face the fire.",
+      "Their unit is {status}, officers scrambling to restore order.",
+      "Their unit is {status}, its ranks staggered by the blow.",
+      "Their unit is {status}, the line thrown into confusion."
     ],
     "closing": [
-      "The unit is unable to move next turn as it turns to face the fire.",
-      "The formation is shaken, if not broken.",
-      "A costly interruption for the enemy.",
-      "Momentum is lost, at least for a turn."
+      "A costly interruption for the enemy, and a gift to your brigade.",
+      "Momentum shifts, if only for a turn.",
+      "Their advance stalls, and your men take heart from it.",
+      "The guns have bought the brigade precious time."
     ]
   },
   "artillery_rout": {
+    "status": "Routed",
+    "tone": "win",
     "opening": [
       "The shot strikes with devastating force.",
-      "The battery's fire tears a hole in the enemy line.",
-      "Round shot ploughs through the formation.",
+      "The battery's fire tears a hole clean through the enemy line.",
+      "Round shot ploughs through the enemy ranks.",
       "The gunners' aim proves ruinous for the target."
     ],
     "middle": [
-      "The formation can no longer hold its ground.",
-      "Order collapses under the weight of the bombardment.",
-      "The survivors begin to stream toward the rear.",
-      "Discipline gives way under the force of the blow."
+      "Their unit is {status}, the survivors streaming toward the rear.",
+      "Their unit is {status}, discipline collapsing under the bombardment.",
+      "Their unit is {status}, colours dragged back in disorder.",
+      "Their unit is {status}, the line broken by a single shot."
     ],
     "closing": [
-      "The unit falls back to the board edge, its fate resting on a rally roll.",
       "A telling blow struck from a distance.",
-      "The battery earns its keep this turn.",
-      "The formation reels away from the line."
+      "The battery earns its reputation this day.",
+      "Hope stirs in the ranks as the enemy reels.",
+      "The guns have done more than muskets could this turn."
     ]
   },
   "artillery_destroy": {
+    "status": "Destroyed",
+    "tone": "win",
     "opening": [
       "The shot finds its mark with terrible effect.",
       "The battery's fire proves utterly devastating.",
-      "Round shot scythes through the formation.",
+      "Round shot scythes through the enemy ranks.",
       "The gun crew's work is done in a single stroke."
     ],
     "middle": [
-      "There is nothing left to rally.",
-      "The unit is torn apart where it stands.",
-      "Few are left standing after the impact.",
-      "The formation is swept away entirely."
+      "Their unit is {status}, scattered where it stood.",
+      "Their unit is {status}, nothing left to rally.",
+      "Their unit is {status}, wiped from the field in an instant.",
+      "Their unit is {status}, gone before the smoke has cleared."
     ],
     "closing": [
-      "The unit is removed from the field.",
-      "A single shot decides the matter.",
-      "The battery has earned its reputation.",
-      "A ruinous result for the enemy brigade."
+      "A single stroke has changed the shape of the battle.",
+      "The battery's name will be remembered after today.",
+      "A ruinous result for the enemy brigade.",
+      "The guns have earned their place in the brigade's story."
     ]
   },
   "rally_success": {
+    "status": "Rallied",
+    "tone": "win",
     "opening": [
-      "Officers ride among the shaken ranks.",
-      "A steady voice calls the men back into line.",
-      "The colours are raised once more amid the disorder.",
-      "A senior officer steps forward to steady the men."
+      "A steady hand and a steadier voice bring the men to their senses.",
+      "Officers ride among the shaken ranks, calling them back to order.",
+      "The colours are raised once more amid the smoke and confusion.",
+      "A senior officer steps into the chaos to steady the men."
     ],
     "middle": [
-      "Discipline reasserts itself among the survivors.",
-      "The men find their nerve and reform.",
-      "Training overcomes the urge to flee further.",
-      "The ranks close up once more around the colours."
+      "The unit is {status}, ready to stand again.",
+      "The unit is {status}, its nerve found once more.",
+      "The unit is {status}, the ranks closing tight around the colours.",
+      "The unit is {status}, fear giving way to discipline."
     ],
     "closing": [
-      "The unit holds at the board edge, ready to be brought forward again.",
-      "Order is restored, for now.",
-      "The formation lives to fight another turn.",
-      "The men stand fast, their nerve regained."
+      "Hope returns to the ranks.",
+      "The brigade holds a little longer, and the men know it.",
+      "Discipline has won out over fear, for now.",
+      "They live to fight another turn, and are grateful for it."
     ]
   },
   "rally_failure": {
+    "status": "Lost",
+    "tone": "loss",
     "opening": [
+      "No voice can be heard over the panic.",
       "The shaken ranks cannot be steadied.",
-      "Officers' calls go unheeded amid the confusion.",
-      "Panic spreads faster than discipline can contain it.",
-      "The disorder proves too great to master."
+      "Discipline gives way entirely to fear.",
+      "The disorder spreads faster than any officer can contain it."
     ],
     "middle": [
-      "The men continue to stream toward the rear.",
-      "Formation and order are lost entirely.",
-      "There is no stopping the retreat.",
-      "The survivors scatter beyond recall."
+      "The unit is {status}, its colours abandoned on the field.",
+      "The unit is {status}, scattered beyond recall.",
+      "The unit is {status}, its place in the brigade left empty.",
+      "The unit is {status}, swallowed by the retreat around it."
     ],
     "closing": [
-      "The unit leaves the field, lost to the brigade.",
-      "A grievous loss for the army.",
-      "The brigade's strength is reduced accordingly.",
-      "The formation is struck from the order of battle."
+      "Another name is added to the brigade's roll of the dead.",
+      "The brigade feels this absence keenly.",
+      "Some men do not come back from a day like this.",
+      "The muster roll will be shorter come evening."
     ]
   }
 }
