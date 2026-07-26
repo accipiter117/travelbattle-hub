@@ -1,0 +1,632 @@
+{
+  "campaigns": [
+    {
+      "id": "flanders",
+      "name": "The Flanders Campaign",
+      "years": "1793\u20131795",
+      "brief": "In 1793 Britain joined the First Coalition to check Revolutionary France's advance into the Low Countries, fighting alongside Austrian, Dutch and Hanoverian allies. It became a campaign of marches, sieges and hard-fought village actions rather than one decisive battle, and though it ended in a costly withdrawal, it forged a generation of British officers, Wellington among them. This campaign works well as an introduction to Napoleonic wargaming \u2014 the Battles are smaller in scale than the Peninsular fights to come, and the Operations lean on delaying actions and holding key ground rather than outright annihilation.",
+      "flow": [
+        {
+          "id": "battle-famars",
+          "type": "battle",
+          "name": "Battle of Famars",
+          "date": "23 May 1793",
+          "intro": "The Duke of York led British, Austrian and Hanoverian troops against General Dampierre's French army near Valenciennes, attacking across a line of villages and ridges until the French abandoned their positions after a hard day's fighting. It was Britain's first major field battle against Revolutionary France and opened the road to the Siege of Valenciennes.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Famars",
+          "historicalResult": "Coalition victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "Dampierre's line breaks by evening and the road to Valenciennes lies open, a clean win in the Coalition's first battle against Revolutionary France.",
+            "frenchWin": "The Coalition assault stalls against Dampierre's defence and the Duke of York is forced to regroup, an early warning of how costly this war will be."
+          }
+        },
+        {
+          "id": "branch-flanders-1",
+          "type": "branch",
+          "chooserSide": "either",
+          "notes": "Winner of Famars chooses which Operation to play next.",
+          "options": [
+            {
+              "id": "op-lincelles",
+              "type": "operation",
+              "name": "Battle of Lincelles",
+              "date": "18 August 1793",
+              "missionArchetype": "Capture the Village",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Lincelles",
+              "historicalResult": "Coalition victory",
+              "firstPlayer": "british",
+              "forces": {
+                "british": { "guardInfantry": 2, "infantry": 2, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 3, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "own board edge, Light Cavalry on the flank",
+                "french": "already inside the village building squares, not on the board edge"
+              },
+              "winConditions": {
+                "british": "clear the village (remove/force out all French units from building squares)",
+                "french": "hold a building square at turn 8, or eliminate both Guard Infantry units"
+              },
+              "outcomes": {
+                "britishWin": "The Guards clear the streets and the village is back in Coalition hands by nightfall, the discipline of the assault becoming the stuff of regimental legend.",
+                "frenchWin": "The garrison holds its ground among the buildings and the Guards are thrown back with heavy loss, leaving Lincelles a French-held thorn in the Coalition line."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-caesars-camp",
+              "type": "operation",
+              "name": "Battle of Caesar's Camp",
+              "date": "7\u20138 August 1793",
+              "missionArchetype": "Hold the Line",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Caesar%27s_Camp",
+              "historicalResult": "French victory",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 3, "artillery": 1, "heavyCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 4, "artillery": 1, "lightCavalry": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "anchored on the hill square(s) from turn 1, Artillery covering the main approach",
+                "french": "own board edge, full width"
+              },
+              "winConditions": {
+                "british": "hold the hill at turn 10, or withdraw off the board edge with the Artillery intact",
+                "french": "take the hill by turn 10, or destroy/capture the Allied Artillery before it withdraws"
+              },
+              "outcomes": {
+                "britishWin": "The hill holds through repeated French assaults, and the defenders withdraw in good order once the position has served its purpose, guns and all.",
+                "frenchWin": "Wave after wave finally tells, and the Allied line breaks off the high ground, leaving the French in control of the camp."
+              },
+              "vip": null
+            }
+          ]
+        },
+        {
+          "id": "battle-hondschoote",
+          "type": "battle",
+          "name": "Battle of Hondschoote",
+          "date": "6\u20138 September 1793",
+          "intro": "While besieging Dunkirk, the Duke of York's army found itself threatened by General Houchard's relief force, and fierce fighting through villages, hedgerows and open fields eventually forced a British withdrawal to avoid being cut off. The failure of the Dunkirk expedition marked a real turning point in the campaign's fortunes.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Hondschoote",
+          "historicalResult": "French victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "The Duke of York holds firm against Houchard's relief attempt, the siege lines stay intact, and Dunkirk remains within reach a little longer.",
+            "frenchWin": "Houchard's relief force breaks the siege lines and the Dunkirk expedition collapses, the Coalition's first real reversal of the war."
+          }
+        },
+        {
+          "id": "branch-flanders-2",
+          "type": "branch",
+          "chooserSide": "either",
+          "notes": "Winner of Hondschoote chooses which Operation to play next.",
+          "options": [
+            {
+              "id": "op-beaumont",
+              "type": "operation",
+              "name": "Battle of Beaumont",
+              "date": "26 April 1794",
+              "missionArchetype": "Surprise Attack",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Beaumont_(1794)",
+              "historicalResult": "French victory",
+              "firstPlayer": "french",
+              "forces": {
+                "french": { "infantry": 4, "lightCavalry": 1, "artillery": 1, "brigadier": 1 },
+                "british": { "infantry": 3, "heavyCavalry": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "french": "own board edge",
+                "british": "split into two separate groups; brigade-contact-to-move rule waived turn 1 only"
+              },
+              "winConditions": {
+                "french": "eliminate 2+ Allied units, or prevent the Brigadier reaching the board edge by turn 8",
+                "british": "get the Brigadier and at least half the force off the defending board edge by turn 8"
+              },
+              "outcomes": {
+                "frenchWin": "The dawn attack catches the outposts completely unprepared, and Beaumont falls before the Allies can form a coherent line.",
+                "britishWin": "Despite the surprise, the scattered garrison rallies fast enough to extract itself and its Brigadier intact, denying the French a clean rout."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-willems",
+              "type": "operation",
+              "name": "Battle of Willems",
+              "date": "10 May 1794",
+              "missionArchetype": "Counterattack",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Willems",
+              "historicalResult": "Coalition victory",
+              "firstPlayer": "british",
+              "forces": {
+                "british": { "guardInfantry": 2, "infantry": 2, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 3, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "own board edge, Guards in the front rank",
+                "french": "holding the village, as at Lincelles"
+              },
+              "winConditions": {
+                "british": "retake the village and eliminate/capture the French Artillery",
+                "french": "hold the village at turn 8, or eliminate both Guard Infantry units"
+              },
+              "outcomes": {
+                "britishWin": "The Guards storm back into Willems and the French gun line is overrun in the fighting, one of the Army's proudest moments even as the wider campaign turns against it.",
+                "frenchWin": "The counterattack breaks against the village defences, and the Guards fall back having failed to retake what French pressure had won."
+              },
+              "vip": null
+            }
+          ]
+        },
+        {
+          "id": "battle-tourcoing",
+          "type": "battle",
+          "name": "Battle of Tourcoing",
+          "date": "17\u201318 May 1794",
+          "intro": "The Coalition attempted an ambitious encirclement of the French army near Tourcoing, but poor coordination let the French defeat the isolated Allied columns one by one, forcing a general retreat despite good fighting from the British troops involved.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Tourcoing",
+          "historicalResult": "French victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "For once the coordination holds, and the encirclement closes on the French rather than the other way round, salvaging a campaign that history remembers as a failure.",
+            "frenchWin": "The encirclement falls apart exactly as the plan risked, and the French pick off the isolated Allied columns in turn, forcing the withdrawal that ends the campaign."
+          }
+        }
+      ]
+    },
+    {
+      "id": "peninsular",
+      "name": "The Peninsular Campaign",
+      "years": "1808\u20131814",
+      "brief": "From 1808 Britain committed to defending Portugal and driving Napoleon's marshals out of Spain, a campaign that grew into Britain's longest and most successful of the wars under Sir Arthur Wellesley, later Wellington. Villages, ridges, bridges and mountain passes decided battles as often as raw numbers did, and small actions by riflemen and cavalry regularly determined whether whole armies survived to fight on. This is the widest-ranging of the three campaigns, moving from desperate defensive rearguards through increasingly confident offensives to the invasion of France itself.",
+      "flow": [
+        {
+          "id": "battle-vimeiro",
+          "type": "battle",
+          "name": "Battle of Vimeiro",
+          "date": "21 August 1808",
+          "intro": "Sir Arthur Wellesley fought his first major battle in Portugal here, repelling repeated French attacks on the ridge at Vimeiro with disciplined infantry volleys after defeating Junot's invasion force. The win secured Portugal and opened Britain's long campaign in the Peninsula.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Vimeiro",
+          "historicalResult": "British victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "The ridge holds against everything Junot throws at it, and Portugal is secured for the campaign that follows.",
+            "frenchWin": "The British line breaks under the French assault, and Junot's grip on Portugal tightens rather than loosens."
+          }
+        },
+        {
+          "id": "branch-peninsular-1",
+          "type": "branch",
+          "chooserSide": "either",
+          "notes": "Winner of Vimeiro chooses which Operation to play next.",
+          "options": [
+            {
+              "id": "op-coa",
+              "type": "operation",
+              "name": "Combat of C\u00f4a",
+              "date": "24 July 1810",
+              "missionArchetype": "Rearguard Action",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_the_C%C3%B4a",
+              "historicalResult": "British withdrawal, force preserved",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 3, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 5, "heavyCavalry": 1, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "spread across the board; own board edge represents the river crossing to be reached, not a starting position",
+                "french": "own board edge, full width"
+              },
+              "winConditions": {
+                "british": "get Brigadier + half the force off via the \"bridge\" edge",
+                "french": "eliminate 2+ British units, or stop the Brigadier crossing"
+              },
+              "outcomes": {
+                "britishWin": "The Light Division scrambles across the C\u00f4a under fire but gets the bulk of its force and its Brigadier over the crossing intact, a narrow escape rather than a victory.",
+                "frenchWin": "Ney's pressure catches the Light Division against the river, and the crossing turns into a costly rout rather than an orderly withdrawal."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-colbert",
+              "type": "operation",
+              "name": "The Death of General Colbert",
+              "date": "3 January 1809 \u2014 Combat of Cacabelos",
+              "missionArchetype": "Assassination Target",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Cacabelos",
+              "historicalResult": "British rearguard success, Colbert killed",
+              "firstPlayer": "british",
+              "forces": {
+                "british": { "infantry": 3, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 3, "heavyCavalry": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "thin rearguard on own board edge, one Infantry unit isolated ahead of it (represents Rifleman Plunket)",
+                "french": "Colbert (VIP) leads from the front with the Heavy Cavalry, closer to the British line than usual"
+              },
+              "winConditions": {
+                "british": "eliminate Colbert by turn 6",
+                "french": "get Colbert off the British board edge, or eliminate the forward British Infantry unit before it acts"
+              },
+              "outcomes": {
+                "britishWin": "The shot finds its mark and Colbert falls from the saddle, the French pursuit thrown into confusion long enough for the rearguard to slip away.",
+                "frenchWin": "The marksman is spotted and cut down before he can find his range, and Colbert's cavalry crashes into the thin British line unchecked."
+              },
+              "vip": {
+                "side": "french",
+                "represents": "General Colbert",
+                "baseMovement": 1,
+                "escortBonus": 1,
+                "escortCondition": "touching a brigade made up entirely of Cavalry and/or Brigadier/VIP units (the French Heavy Cavalry)",
+                "captureRule": "overrides the standard Brigadier rule \u2014 captured/eliminated if an enemy unit ends its move in its square, rather than being displaced",
+                "replaces": "Combat of Barba del Puerco"
+              }
+            }
+          ]
+        },
+        {
+          "id": "battle-bussaco",
+          "type": "battle",
+          "name": "Battle of Bussaco",
+          "date": "27 September 1810",
+          "intro": "Wellington chose to stand on the Bussaco ridge and force Mass\u00e9na to attack uphill, and French assaults broke repeatedly against the Allied line before Mass\u00e9na gave up the frontal attack and tried to outflank the position instead.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Bussaco",
+          "historicalResult": "Allied victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "The ridge holds through every assault Mass\u00e9na sends at it, a textbook demonstration of Wellington's defensive method.",
+            "frenchWin": "The ridge finally gives, and Mass\u00e9na's persistence pays off where the frontal attacks alone should have failed."
+          }
+        },
+        {
+          "id": "branch-peninsular-2",
+          "type": "branch",
+          "chooserSide": "either",
+          "notes": "Winner of Bussaco chooses which Operation to play next.",
+          "options": [
+            {
+              "id": "op-el-bodon",
+              "type": "operation",
+              "name": "Combat of El Bod\u00f3n",
+              "date": "25 September 1811",
+              "missionArchetype": "Hold the Line",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Combat_of_El_Bod%C3%B3n",
+              "historicalResult": "Successful Allied withdrawal",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 2, "lightCavalry": 2, "brigadier": 1 },
+                "french": { "infantry": 4, "heavyCavalry": 2, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "forward screening position, cavalry on the flanks",
+                "french": "own board edge, Heavy Cavalry leading"
+              },
+              "winConditions": {
+                "british": "withdraw the Brigadier and at least 3 units off the board edge by turn 8",
+                "french": "eliminate 3+ British units, or prevent the withdrawal"
+              },
+              "outcomes": {
+                "britishWin": "The screen holds just long enough, and the Brigadier gets the bulk of the force away before the French cavalry can close the gap.",
+                "frenchWin": "The heavier French cavalry finally breaks through the screen, catching enough of the withdrawing force to make the delaying action a costly one."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-sabugal",
+              "type": "operation",
+              "name": "Battle of Sabugal",
+              "date": "3 April 1811",
+              "missionArchetype": "Break Through",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Sabugal",
+              "historicalResult": "Allied victory",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 3, "brigadier": 1, "reinforcementsTurn4": { "infantry": 2, "lightCavalry": 1 } },
+                "french": { "infantry": 4, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "turn-1 force placed centrally, not on the board edge (isolated by fog); reinforcements arrive turn 4 from own board edge",
+                "french": "own board edge, positioned to threaten the isolated British group"
+              },
+              "winConditions": {
+                "british": "seize the ridge (designated hill squares) by turn 10, or link up the reinforcements with the turn-1 force",
+                "french": "eliminate the isolated turn-1 British force before turn 4 reinforcements arrive"
+              },
+              "outcomes": {
+                "britishWin": "The isolated force holds out in the fog long enough for the rest of the Light Division to arrive, and the ridge ends up in British hands despite the shaky start.",
+                "frenchWin": "Reynier's men find the isolated British group before help arrives, and the fog that caused the separation ends up deciding the battle."
+              },
+              "vip": null
+            }
+          ]
+        },
+        {
+          "id": "battle-salamanca",
+          "type": "battle",
+          "name": "Battle of Salamanca",
+          "date": "22 July 1812",
+          "intro": "Perhaps Wellington's finest battlefield win, this saw him spot Marmont overextending his left flank and launch an immediate, devastating counterattack that shattered the French army, opening the road to Madrid.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Salamanca",
+          "historicalResult": "British victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "Marmont's overextension is punished exactly as it should be, and the French army is shattered in an afternoon, opening the road to Madrid.",
+            "frenchWin": "The counterattack fails to develop in time, and Marmont's army holds the field, leaving Madrid out of reach for now."
+          }
+        },
+        {
+          "id": "branch-peninsular-3",
+          "type": "branch",
+          "chooserSide": "either",
+          "notes": "Winner of Salamanca chooses which Operation to play next.",
+          "options": [
+            {
+              "id": "op-arroyo-dos-molinos",
+              "type": "operation",
+              "name": "Battle of Arroyo dos Molinos",
+              "date": "28 October 1811",
+              "missionArchetype": "Surprise Attack",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Arroyo_dos_Molinos",
+              "historicalResult": "British victory",
+              "firstPlayer": "british",
+              "forces": {
+                "british": { "infantry": 3, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 4, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "own board edge",
+                "french": "bunched together in a small central area, cannot move turn 1"
+              },
+              "winConditions": {
+                "british": "eliminate/capture the French Brigadier, or eliminate 3+ French units",
+                "french": "survive to turn 8 with the Brigadier and at least half the force intact"
+              },
+              "outcomes": {
+                "britishWin": "Girard's division is caught still forming up and routed before it can properly deploy, a clean and rare success for a genuine surprise attack.",
+                "frenchWin": "The division scrambles into some kind of order in time to blunt the attack, and the surprise that should have won the day is wasted."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-garcia-hernandez",
+              "type": "operation",
+              "name": "Battle of Garc\u00eda Hern\u00e1ndez",
+              "date": "23 July 1812",
+              "missionArchetype": "Break the Retreat",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Garc%C3%ADa_Hern%C3%A1ndez",
+              "historicalResult": "Allied victory",
+              "firstPlayer": "british",
+              "forces": {
+                "british": { "heavyCavalry": 2, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantrySquare": 3, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "own board edge, full width",
+                "french": "mid-board, not on the board edge, already formed in Square (caught mid-retreat)"
+              },
+              "winConditions": {
+                "british": "break 2+ French Squares (eliminate or force them out of Square formation)",
+                "french": "hold all Squares intact and reach the board edge (retreat off) by turn 6"
+              },
+              "outcomes": {
+                "britishWin": "The KGL cavalry breaks square against every expectation, one of the rare moments in the whole war infantry squares actually fall to a mounted charge.",
+                "frenchWin": "The squares hold, and the retreating French infantry gets away in good order despite the aggressive pursuit."
+              },
+              "vip": null
+            }
+          ]
+        },
+        {
+          "id": "battle-vitoria",
+          "type": "battle",
+          "name": "Battle of Vitoria",
+          "date": "21 June 1813",
+          "intro": "Joseph Bonaparte tried to withdraw through the valleys around Vitoria while dragging along a huge baggage train, and Wellington attacked on multiple fronts at once, overwhelming the French and capturing enormous quantities of equipment. The win effectively ended French rule in Spain.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Vitoria",
+          "historicalResult": "Allied victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "Joseph's multi-column retreat collapses under the weight of Wellington's attack, and the baggage train left behind effectively funds the rest of the campaign.",
+            "frenchWin": "The withdrawal holds together under pressure, and Joseph's army escapes with its equipment largely intact, an unlikely reprieve for French rule in Spain."
+          }
+        },
+        {
+          "id": "battle-toulouse",
+          "type": "battle",
+          "name": "Battle of Toulouse",
+          "date": "10 April 1814",
+          "intro": "Crossing into southern France, Wellington fought Soult in one last major battle around fortified villages and ridges, unaware that Napoleon had already abdicated days earlier. After hard fighting, Soult withdrew and the Peninsular campaign was finally over.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Toulouse_(1814)",
+          "historicalResult": "Allied victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "Soult's prepared positions eventually give way, a fitting final win on French soil to close out the campaign.",
+            "frenchWin": "Soult's defence holds, an ironic final French success in a war that news of Napoleon's abdication has already ended."
+          }
+        }
+      ]
+    },
+    {
+      "id": "waterloo",
+      "name": "The Waterloo Campaign",
+      "years": "1815",
+      "brief": "Napoleon's escape from Elba in March 1815 forced the Seventh Coalition to move fast, and his own plan was to strike Wellington and Bl\u00fccher separately before their armies could combine. What followed was only four days of campaigning, 15\u201318 June, but produced some of the most famous fighting in military history, as Wellington's Anglo-Allied army bought time for the Prussians to arrive. This campaign naturally alternates between the two enormous set-piece battles and the smaller, desperate actions fought around the farms and crossroads that decided them.",
+      "flow": [
+        {
+          "id": "battle-quatre-bras",
+          "type": "battle",
+          "name": "Battle of Quatre Bras",
+          "date": "16 June 1815",
+          "intro": "Ney tried to seize the Quatre Bras crossroads before Wellington could concentrate his army, but British reinforcements arrived through the day and repeatedly halted French attacks despite being badly outnumbered early on, keeping Wellington from being cut off from the Prussians entirely.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Quatre_Bras",
+          "historicalResult": "Strategic Allied victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "Reinforcements arrive just in time, and Ney's attempt to seize the crossroads before Wellington can concentrate fails outright.",
+            "frenchWin": "Ney takes the crossroads before the Allied army can properly form up, cutting Wellington off from Bl\u00fccher at the worst possible moment."
+          }
+        },
+        {
+          "id": "branch-waterloo-1",
+          "type": "branch",
+          "chooserSide": "british",
+          "notes": "Only offered if the British player won Quatre Bras. If the French player won, skip this branch and proceed straight to the Battle of Waterloo.",
+          "options": [
+            {
+              "id": "op-hougoumont",
+              "type": "operation",
+              "name": "Defence of Hougoumont",
+              "date": "18 June 1815",
+              "missionArchetype": "Defence",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Hougoumont",
+              "historicalResult": "British victory",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "guardInfantry": 2, "artillery": 1, "brigadier": 1 },
+                "french": { "infantry": 6, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "fixed inside the farm building squares",
+                "french": "own board edge, full width; eliminated units return as a fresh wave after 2 turns"
+              },
+              "winConditions": {
+                "british": "hold the farm building squares at turn 12",
+                "french": "capture and hold all farm building squares at turn 12"
+              },
+              "outcomes": {
+                "britishWin": "The walls hold through every assault, and Napoleon's overcommitment to this one farm ends up costing him far more than it was ever worth.",
+                "frenchWin": "The garrison is finally overwhelmed, and Hougoumont falls, opening a gap on Wellington's flank he can't easily afford."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-la-haye-sainte",
+              "type": "operation",
+              "name": "Defence of La Haye Sainte",
+              "date": "18 June 1815",
+              "missionArchetype": "Defence",
+              "sourceUrl": "https://en.wikipedia.org/wiki/La_Haye_Sainte",
+              "historicalResult": "French capture the farm",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 3, "brigadier": 1 },
+                "french": { "infantry": 5, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "fixed inside the farmhouse squares, no resupply/rally once removed",
+                "french": "own board edge"
+              },
+              "winConditions": {
+                "british": "hold the farmhouse squares at turn 10",
+                "french": "capture the farmhouse by turn 10"
+              },
+              "outcomes": {
+                "frenchWin": "The ammunition runs out exactly as it did in history, and the KGL are finally forced out, letting French guns push dangerously close to the Allied centre.",
+                "britishWin": "Resupply gets through in time this time, and the farmhouse holds, denying the French the foothold that historically nearly broke the line."
+              },
+              "vip": null
+            }
+          ]
+        },
+        {
+          "id": "battle-waterloo",
+          "type": "battle",
+          "name": "Battle of Waterloo",
+          "date": "18 June 1815",
+          "intro": "The decisive battle of the whole war saw Napoleon attack Wellington's ridge all day while trying to take Hougoumont and La Haye Sainte before Bl\u00fccher's Prussians could arrive. The Imperial Guard's final assault is repulsed, ending Napoleon's rule for good.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+          "historicalResult": "Coalition victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "The ridge holds until the Prussians arrive, and the Imperial Guard's final assault breaks against the line just as it did in history.",
+            "frenchWin": "The ridge gives before Bl\u00fccher's men can make a difference, and the Guard's assault succeeds where history says it failed."
+          }
+        },
+        {
+          "id": "branch-waterloo-2",
+          "type": "branch",
+          "chooserSide": "french",
+          "notes": "Only offered if the French player won Waterloo. If the British player won, skip this branch and proceed straight to the Pursuit at Genappe.",
+          "options": [
+            {
+              "id": "op-papelotte",
+              "type": "operation",
+              "name": "Papelotte",
+              "date": "18 June 1815",
+              "missionArchetype": "Hold the Village",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Waterloo#Papelotte",
+              "historicalResult": "Coalition victory",
+              "firstPlayer": "french",
+              "forces": {
+                "british": { "infantry": 3, "lightCavalry": 1, "brigadier": 1 },
+                "french": { "infantry": 4, "artillery": 1, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "in and around the village buildings",
+                "french": "own board edge"
+              },
+              "winConditions": {
+                "british": "hold the village at turn 10",
+                "french": "capture the village before turn 10"
+              },
+              "outcomes": {
+                "britishWin": "The village holds on Wellington's eastern flank right up until the first Prussian troops start to arrive nearby, exactly as it should.",
+                "frenchWin": "The village falls before the Prussian link-up can be established, opening a flank Wellington badly needed to hold."
+              },
+              "vip": null
+            },
+            {
+              "id": "op-dukes-narrow-escape",
+              "type": "operation",
+              "name": "The Duke's Narrow Escape",
+              "date": "16 June 1815 \u2014 Battle of Quatre Bras",
+              "missionArchetype": "VIP Extraction",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Quatre_Bras",
+              "historicalResult": "British/Coalition success, Wellington survives",
+              "firstPlayer": "french",
+              "forces": {
+                "french": { "lightCavalry": 2, "heavyCavalry": 1, "brigadier": 1, "freeMoveTurn1": true },
+                "british": { "lightCavalry": 1, "guardInfantrySquare": 1, "infantry": 2, "brigadier": 1 }
+              },
+              "startPositions": {
+                "british": "Wellington (VIP) and his Light Cavalry escort placed forward, near the crossroads; the Guard Infantry Square (92nd Gordon Highlanders) set up on the British own board edge, in the normal deployment rows",
+                "french": "own board edge, one unopposed move on turn 1"
+              },
+              "winConditions": {
+                "french": "eliminate or capture Wellington",
+                "british": "get Wellington into the Guard Infantry's Square, or off the British board edge, before that happens"
+              },
+              "outcomes": {
+                "britishWin": "Wellington and his escort reach safety with the French cavalry a stride behind them, the army's command intact for the fighting still to come.",
+                "frenchWin": "The charge that history says came agonisingly close finally connects, and command of the Anglo-Allied army is thrown into total disarray."
+              },
+              "vip": {
+                "side": "british",
+                "represents": "Wellington",
+                "baseMovement": 1,
+                "escortBonus": 1,
+                "escortCondition": "touching a brigade made up entirely of Cavalry and/or Brigadier/VIP units (the British Light Cavalry escort)",
+                "captureRule": "overrides the standard Brigadier rule \u2014 captured/eliminated if an enemy unit ends its move in its square, rather than being displaced",
+                "replaces": "The Fight for Frischermont"
+              }
+            }
+          ]
+        },
+        {
+          "id": "battle-genappe",
+          "type": "battle",
+          "name": "Pursuit after Waterloo (Battle of Genappe)",
+          "date": "19 June 1815",
+          "intro": "Waterloo ended Napoleon's hopes, but the retreat quickly turned into a chaotic running battle as British cavalry pursued the broken French army through Genappe \u2014 less a set-piece battle than the visible collapse of an army.",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Genappe",
+          "historicalResult": "Coalition victory",
+          "firstPlayer": "diceOff",
+          "outcomes": {
+            "britishWin": "The pursuit through Genappe scatters what's left of the French army beyond any hope of reforming.",
+            "frenchWin": "The rearguard actually holds together through the town, buying the retreating army more time than history gave it."
+          }
+        }
+      ]
+    }
+  ]
+}
