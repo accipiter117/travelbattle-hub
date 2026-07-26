@@ -557,8 +557,8 @@
         {
           "id": "branch-waterloo-1",
           "type": "branch",
-          "chooserSide": "british",
-          "notes": "Only offered if the British player won Quatre Bras. If the French player won, skip this branch and proceed straight to the Battle of Waterloo.",
+          "chooserSide": "either",
+          "notes": "Winner of the preceding Battle chooses which Operation to play next.",
           "options": [
             {
               "id": "op-hougoumont",
@@ -659,8 +659,8 @@
         {
           "id": "branch-waterloo-2",
           "type": "branch",
-          "chooserSide": "french",
-          "notes": "Only offered if the French player won Waterloo. If the British player won, skip this branch and proceed straight to the Pursuit at Genappe.",
+          "chooserSide": "either",
+          "notes": "Winner of the preceding Battle chooses which Operation to play next.",
           "options": [
             {
               "id": "op-papelotte",
