@@ -1,0 +1,202 @@
+{
+  "houseRules": [
+    {
+      "title": "Turned-around units",
+      "text": "A unit currently turned around (from a 1-difference pushback, or an artillery result of 4) gives the attacker +1 to their combat die if struck while in that state."
+    },
+    {
+      "title": "Rallying at the board edge",
+      "text": "The Rally roll itself needs no Brigadier connection, it is automatic. The unit simply cannot move again until its Brigadier reaches it."
+    },
+    {
+      "title": "Retreating with nowhere left to go",
+      "text": "A unit forced back while already at the board edge instead runs to the nearest corner of its own board edge offering the clearest path away from enemy contact."
+    }
+  ],
+  "coreTactics": [
+    {
+      "num": 1,
+      "title": "On the Sanctity of the Chain",
+      "body": [
+        "Every young officer loses his first battle the same way: by falling in love with a single unit and sending it racing ahead. The moment a unit loses touch with the chain back to its Brigadier, it is frozen where it stands. It may still fight if attacked, but it cannot advance another inch.",
+        "Advance in a wedge, the Brigadier central and slightly behind, so a flank unit can peel off to strike without severing the line home."
+      ],
+      "tip": "Before you move a single figure, trace the chain in your head from the Brigadier to the farthest unit. If you cannot trace it after the move, do not make the move."
+    },
+    {
+      "num": 2,
+      "title": "The Gunner's Creed",
+      "body": [
+        "A gun that fires first wins the exchange every time, because a gun that is touched has already lost it. Artillery fights combat with the same single die as a line infantryman, none of his terrain bonuses, and a wretched 5-or-6 to rally if broken.",
+        "Elevation is worth more than range. From a hill your gun sees over lesser ground and may fire clean over an intervening unit, so long as no higher hill blocks the line."
+      ],
+      "tip": "Keep at least one unit screening each gun. Pair guns with cavalry: the cavalry forces the square, the gun punishes it with its +1 bonus against Square or doubled-up Infantry."
+    },
+    {
+      "num": 3,
+      "title": "The Huntsman's Eye",
+      "body": [
+        "Cavalry does not break disciplined infantry, it breaks infantry caught out of formation, or infantry already reeling from the guns. A trooper who charges a formed Square gets no bonus die, and gives one to the defender.",
+        "Light Cavalry's reach (2 squares, 3 on a road) makes it the tool for exploiting an already-broken enemy unit before it rallies, or threatening artillery into forming square earlier than the opponent wants."
+      ],
+      "tip": "Ask before every charge: is this unit formed? If square, ride past it, threaten it, or leave it to the guns. Save the charge for the unit that is already bleeding."
+    },
+    {
+      "num": 4,
+      "title": "The Square: A Soldier's Last Resort",
+      "body": [
+        "Forming square costs a full turn and locks the unit stationary, out of woods or buildings, and invites a +1 bonus to any artillery targeting it. It is a single answer to a single threat, unformed cavalry closing on open ground, not a general defence.",
+        "Built-up terrain gives infantry a bonus die on defence with none of the square's downsides, so villages and buildings are the better anchor point wherever available."
+      ],
+      "tip": "Call square before the cavalry arrives, not after. Under our house rule, a unit still turned around from lowering its square (or from any pushback) gives the attacker +1 if struck in that state, so reforming carries risk even once the cavalry threat has passed."
+    },
+    {
+      "num": 5,
+      "title": "Ground Worth Bleeding For",
+      "body": [
+        "Woods admit infantry alone, one per square, and become a wall no cavalry can cross and a curtain no gun can see through. A village grants infantry a bonus die in defence and blinds enemy artillery to whatever stands behind it. Roads grant an extra square of movement, useful for redeploying a Brigade sideways.",
+        "The commander who claims the wood, the village and the crossroads has often won the battle before the first die is thrown."
+      ],
+      "tip": "On deployment, identify the one piece of terrain that most helps your weakest arm, and place your Brigade to reach it first."
+    },
+    {
+      "num": 6,
+      "title": "Breaking a Brigade, Not a Man",
+      "body": [
+        "Remember what you are fighting for: breaking two of the opponent's three Brigades, not destroying every figure. A commander who spreads fire evenly across the enemy line wins nothing. Identify the thinnest, most isolated Brigade and throw every available die at it.",
+        "Mind your own retreat too. A difference of 2 sends the loser scrambling to the board edge nearest their own Brigadier, with only a rally roll to save them, so a Brigadier badly out of position can strand his own retreating units."
+      ],
+      "tip": "Since the win condition is brigades broken, not total casualties, mass effort on whichever enemy Brigade is already thinnest rather than spreading pressure evenly."
+    }
+  ],
+  "manoeuvres": [
+    {
+      "num": 7,
+      "title": "The Combined Arms Echelon",
+      "scope": "Full Brigade",
+      "body": [
+        "A brigade fighting as three separate arms loses to a brigade fighting as one intention spread across three turns. Turn one, the gun fires for effect. Turn two, while the target is still reeling, cavalry closes the distance. Turn three, infantry arrives to finish the job and hold the ground.",
+        "Mind the differing speeds: cavalry moves 2 squares a turn, infantry only 1, so infantry following behind can fall out of the Brigadier's chain if he stays with the cavalry. Keep the Brigadier central enough to hold both."
+      ],
+      "tip": "Before turn one, decide which single enemy unit your whole brigade will spend three turns destroying, and commit every arm to that target in sequence, not simultaneously."
+    },
+    {
+      "num": 8,
+      "title": "The Hinge Manoeuvre",
+      "scope": "Full Brigade",
+      "body": [
+        "Place infantry in a village or wood and it becomes close to unbreakable there, a pin the rest of your Brigade can turn upon. The remainder, cavalry and any spare infantry, advances around that anchor rather than straight ahead, using its position to keep the chain intact while covering ground the enemy did not expect to defend.",
+        "Guard Infantry makes the ideal hinge: their re-roll stacks with the building's bonus die, and they need not move again."
+      ],
+      "tip": "Choose your hinge before you choose your attack. An anchor placed after the enemy has already reacted is no longer a hinge, it is just another exposed unit."
+    },
+    {
+      "num": 9,
+      "title": "Defence in Depth (The Leapfrog Withdrawal)",
+      "scope": "Full Brigade",
+      "body": [
+        "Deploy in two lines, the second a full two squares behind the first. When the front line is struck and forced back, it retires through the gaps of the second, which meets the attacker fresh while he is disordered from the fight just finished.",
+        "This is not retreat, it is trading ground you do not need for a tempo advantage you very much do."
+      ],
+      "tip": "A unit that has just retired is turned around and gives the attacker +1 under our house rule. Retire it far enough that the enemy cannot reach and strike it again next turn while it is still facing the wrong way."
+    },
+    {
+      "num": 10,
+      "title": "The Double Envelopment",
+      "scope": "Two Brigades",
+      "body": [
+        "You command three Brigades, and so does your enemy. Identify the enemy Brigade already thinnest or worst positioned, then commit two of your own, one from each flank, to converge on it together.",
+        "The aim is to sever its chain to its own Brigadier from two directions at once, so any retreat runs into your own advancing units rather than open ground."
+      ],
+      "tip": "Pick the target Brigade before the battle begins, not mid-fight. This also leaves your third Brigade to fend for itself, so only attempt it once that Brigade can hold alone."
+    },
+    {
+      "num": 11,
+      "title": "The Grand Battery",
+      "scope": "Two Brigades",
+      "body": [
+        "Draw artillery from two different Brigades onto adjoining high ground, each screened by its own infantry, and walk them forward in step. Remember the odds fall away with distance: needing to roll at or above the range in squares means a battery is a genuine wall only within about three squares, a nuisance beyond that.",
+        "Within that effective radius, a single target struck by two guns in the same turn need only fail one of two rolls to suffer."
+      ],
+      "tip": "Never move one gun of a Grand Battery without the other. An unmatched pair is just two lone guns taking turns to be vulnerable."
+    },
+    {
+      "num": 12,
+      "title": "Reserve Doctrine (The Guard in Hand)",
+      "scope": "Full Brigade",
+      "body": [
+        "A Guard Infantry or Heavy Cavalry unit kept out of the opening exchanges, positioned centrally within its Brigade's chain, becomes a lever for whichever contact point begins to crack, rather than a die already spent on a fight that was going to be won regardless.",
+        "The reserve can only ever reinforce within its own Brigade, since it must stay touching that Brigade's line to move. Position it where two or three of that Brigade's own units might plausibly need help."
+      ],
+      "tip": "Never commit your reserve to shore up a fight you were already winning. Save it for the turn a fight is genuinely in the balance."
+    },
+    {
+      "num": 13,
+      "title": "Feint and Concentrate",
+      "scope": "All Three Brigades",
+      "body": [
+        "Advance one Brigade, ideally your weakest, aggressively and visibly on one flank. The enemy will often meet it in kind, committing attention and dice to a fight you never intended to win outright, while your other two Brigades advance quietly elsewhere.",
+        "This is the most patient of the doctrines here. It asks you to watch a Brigade you sent forward take losses without panic."
+      ],
+      "tip": "Decide which Brigade is bait before deployment, not after it starts losing. A feint discovered mid-battle is simply a bad attack."
+    },
+    {
+      "num": 14,
+      "title": "The Refused Flank (Oblique Advance)",
+      "scope": "Two Brigades",
+      "body": [
+        "Hold one Brigade back on defensive ground, refusing that flank entirely, while a second advances at an angle toward one end of the enemy's line. You accept being outnumbered along most of the board in exchange for local superiority at the point that matters first.",
+        "Win that flank fight, and the victorious Brigade can turn inward to take the enemy's centre from the side."
+      ],
+      "tip": "The danger is patience. Commit the refused flank too early and you have simply fought an even battle everywhere, the very thing this doctrine exists to avoid."
+    },
+    {
+      "num": 15,
+      "title": "The N\u00e9velle Crossing",
+      "scope": "Full Brigade",
+      "body": [
+        "Named for Wellington's forcing of the Nivelle river line. A wood square is your river: cavalry cannot follow you in, and artillery loses its line of sight the moment you enter. Move a Brigade through a wood as a protected corridor rather than around it.",
+        "You will move slowly, infantry only, one unit per square, but you arrive at the far side able to choose your own moment and square of contact."
+      ],
+      "tip": "Do not attempt this with cavalry attached, they will simply be left behind and separated from the chain. Use it when you need to arrive somewhere the enemy cannot prepare for, not when you need to arrive quickly."
+    },
+    {
+      "num": 16,
+      "title": "The Colenso Feint-Fire",
+      "scope": "Single Unit",
+      "body": [
+        "Named for the exposed gun line at Colenso. A calculated gamble rather than a doctrine to repeat every turn: advance a gun beyond its normal screened position to guarantee a close-range hit on a target you cannot afford to let survive another turn.",
+        "You are trading the gun's safety for certainty. Accept that it may be charged and lost next turn, and only take the shot when the target justifies that cost."
+      ],
+      "tip": "Only ever a one-shot decision. If the target survives the shot, you have simply lost your screen and your gun's safety for nothing."
+    }
+  ],
+  "counters": [
+    {
+      "title": "Against the Grand Battery",
+      "counters": "Manoeuvre No. 11",
+      "text": "Its wall is only real within about three squares. Route through woods or villages that block line of sight, or accept the risk and close the distance fast with cavalry, since a gun caught in melee fights on equal terms with none of its range advantage."
+    },
+    {
+      "title": "Against the Double Envelopment",
+      "counters": "Manoeuvre No. 10",
+      "text": "Do not let one Brigade advance faster than its neighbours. If a Brigade is being enveloped, your remaining two Brigades' best response is usually their own converging attack elsewhere, trading the isolated Brigade for tempo rather than trying to rescue it."
+    },
+    {
+      "title": "Against Feint and Concentrate",
+      "counters": "Manoeuvre No. 13",
+      "text": "Track total enemy movement, not total enemy dice thrown. A loud fight with few units actually moving is more likely a feint than a fight with three units genuinely converging."
+    },
+    {
+      "title": "Against Reserve Doctrine",
+      "counters": "Manoeuvre No. 12",
+      "text": "Create two genuine crisis points at once. A single held-back Guard or Heavy Cavalry unit can only answer one of them."
+    },
+    {
+      "title": "Against the Refused Flank",
+      "counters": "Manoeuvre No. 14",
+      "text": "The refused Brigade is deliberately under-strength. If you can reach and break it before the oblique attack resolves elsewhere, it is the weakest link on the board."
+    }
+  ],
+  "pushHold": "Push when you hold a bonus die, a re-roll, or local superiority on the specific square you are fighting over. Hold when the reverse is true, or when advancing would break your own Brigadier's chain. When in doubt, hold, ground costs nothing to keep and everything to win back."
+}
