@@ -11,6 +11,10 @@
     {
       "title": "Retreating with nowhere left to go",
       "text": "A unit forced back while already at the board edge instead runs to the nearest corner of its own board edge offering the clearest path away from enemy contact."
+    },
+    {
+      "title": "Leadership Roll",
+      "text": "Each Brigadier holds one Leadership Roll for the match, a single guaranteed Rally save he can grant to any unit under his command in place of a failed Rally roll. Once spent, it is gone for the rest of the battle."
     }
   ],
   "coreTactics": [
@@ -28,25 +32,27 @@
       "title": "The Gunner's Creed",
       "body": [
         "A gun that fires first wins the exchange every time, because a gun that is touched has already lost it. Artillery fights combat with the same single die as a line infantryman, none of his terrain bonuses, and a wretched 5-or-6 to rally if broken.",
-        "Elevation is worth more than range. From a hill your gun sees over lesser ground and may fire clean over an intervening unit, so long as no higher hill blocks the line."
+        "Elevation is worth more than range. From a hill your gun sees over lesser ground and may fire clean over an intervening unit, so long as no higher hill blocks the line. A gun sited inside a building gets the same defensive die Infantry does there, but it takes the building's one-unit slot entirely, no infantry garrison can share it.",
+        "Ploughed fields are the one piece of ground a gun cannot simply walk across. Foot Artillery needs a Cavalry unit for every gun making the crossing, or it stays put. Embed the gun in an all-Cavalry Brigade instead and it becomes Horse Artillery, matching the Cavalry's own speed everywhere except across a field, where that advantage disappears and it drops to a single square like the horses around it."
       ],
-      "tip": "Keep at least one unit screening each gun. Pair guns with cavalry: the cavalry forces the square, the gun punishes it with its +1 bonus against Square or doubled-up Infantry."
+      "tip": "Keep at least one unit screening each gun. Pair guns with cavalry: the cavalry forces the square, the gun punishes it with its +1 bonus against Square, Column, or doubled-up Infantry, and the same cavalry escort is what lets the gun follow the advance across rough ground."
     },
     {
       "num": 3,
       "title": "The Huntsman's Eye",
       "body": [
         "Cavalry does not break disciplined infantry, it breaks infantry caught out of formation, or infantry already reeling from the guns. A trooper who charges a formed Square gets no bonus die, and gives one to the defender.",
-        "Light Cavalry's reach (2 squares, 3 on a road) makes it the tool for exploiting an already-broken enemy unit before it rallies, or threatening artillery into forming square earlier than the opponent wants."
+        "A clean run of two open squares into contact without pivoting is a formal Charge, and it wins any tie in the first round, forcing the loser back and turning it around. That bonus is gone by the second round of the same fight, and it never applies at all through a ploughed field, uphill, or against a Square.",
+        "Light Cavalry's reach (2 squares, 3 on a road) makes it the tool for exploiting an already-broken enemy unit before it rallies, or threatening artillery into forming square earlier than the opponent wants. Neither Cavalry type can ever attack a unit sheltering inside a building, that door is closed outright."
       ],
-      "tip": "Ask before every charge: is this unit formed? If square, ride past it, threaten it, or leave it to the guns. Save the charge for the unit that is already bleeding."
+      "tip": "Ask before every charge: is this unit formed, and is the ground clear? If square, ride past it, threaten it, or leave it to the guns. Save the two-square charge for the unit that is already bleeding, on ground that lets you actually claim the tie-win."
     },
     {
       "num": 4,
       "title": "The Square: A Soldier's Last Resort",
       "body": [
         "Forming square costs a full turn and locks the unit stationary, out of woods or buildings, and invites a +1 bonus to any artillery targeting it. It is a single answer to a single threat, unformed cavalry closing on open ground, not a general defence.",
-        "Built-up terrain gives infantry a bonus die on defence with none of the square's downsides, so villages and buildings are the better anchor point wherever available."
+        "Built-up terrain gives infantry a bonus die on defence with none of the square's downsides, so villages and buildings are the better anchor point wherever available, provided you have not already parked a gun in the one available slot."
       ],
       "tip": "Call square before the cavalry arrives, not after. Under our house rule, a unit still turned around from lowering its square (or from any pushback) gives the attacker +1 if struck in that state, so reforming carries risk even once the cavalry threat has passed."
     },
@@ -54,19 +60,20 @@
       "num": 5,
       "title": "Ground Worth Bleeding For",
       "body": [
-        "Woods admit infantry alone, one per square, and become a wall no cavalry can cross and a curtain no gun can see through. A village grants infantry a bonus die in defence and blinds enemy artillery to whatever stands behind it. Roads grant an extra square of movement, useful for redeploying a Brigade sideways.",
-        "The commander who claims the wood, the village and the crossroads has often won the battle before the first die is thrown."
+        "Woods admit infantry alone, one per square, and become a wall no cavalry can cross and a curtain no gun can see through. A defending unit there gets an extra die, but only if it did not move into the square and attack in the same turn, so claim the wood a turn before you need the bonus, not the same turn you launch from it. A village grants infantry (or a single gun) a bonus die in defence and blinds enemy artillery to whatever stands behind it. Roads grant an extra square of movement, useful for redeploying a Brigade sideways.",
+        "A hill adds a defensive edge no other terrain gives: the defender wins any tie against an attacker coming from lower ground, and Cavalry cannot charge uphill at all, though it can still make a normal attack.",
+        "A wood is no longer purely passive ground either. An Infantry unit holding a square with no enemy adjacent can Lay Ambush instead of moving, going still and concealed until an enemy steps within reach, at which point the ambush can be sprung as an interrupt for a +1 bonus to the die. The commander who claims the wood, the village, the hill and the crossroads has often won the battle before the first die is thrown."
       ],
-      "tip": "On deployment, identify the one piece of terrain that most helps your weakest arm, and place your Brigade to reach it first."
+      "tip": "On deployment, identify the one piece of terrain that most helps your weakest arm, and place your Brigade to reach it first. If it is a wood, decide early whether you want it as a static wall, a hidden ambush, or a springboard, because claiming it the same turn you attack from it costs you the defensive die."
     },
     {
       "num": 6,
       "title": "Breaking a Brigade, Not a Man",
       "body": [
         "Remember what you are fighting for: breaking two of the opponent's three Brigades, not destroying every figure. A commander who spreads fire evenly across the enemy line wins nothing. Identify the thinnest, most isolated Brigade and throw every available die at it.",
-        "Mind your own retreat too. A difference of 2 sends the loser scrambling to the board edge nearest their own Brigadier, with only a rally roll to save them, so a Brigadier badly out of position can strand his own retreating units."
+        "Mind your own retreat too. A difference of 2 sends the loser scrambling to the board edge nearest their own Brigadier, with only a rally roll (or that Brigadier's single banked Leadership Roll, if he still has it) to save them, so a Brigadier badly out of position can strand his own retreating units."
       ],
-      "tip": "Since the win condition is brigades broken, not total casualties, mass effort on whichever enemy Brigade is already thinnest rather than spreading pressure evenly."
+      "tip": "Since the win condition is brigades broken, not total casualties, mass effort on whichever enemy Brigade is already thinnest rather than spreading pressure evenly. Save your Brigadier's Leadership Roll for the unit you genuinely cannot afford to lose."
     }
   ],
   "manoeuvres": [
@@ -75,7 +82,7 @@
       "title": "The Combined Arms Echelon",
       "scope": "Full Brigade",
       "body": [
-        "A brigade fighting as three separate arms loses to a brigade fighting as one intention spread across three turns. Turn one, the gun fires for effect. Turn two, while the target is still reeling, cavalry closes the distance. Turn three, infantry arrives to finish the job and hold the ground.",
+        "A brigade fighting as three separate arms loses to a brigade fighting as one intention spread across three turns. Turn one, the gun fires for effect. Turn two, while the target is still reeling, cavalry closes the distance for the Charge. Turn three, infantry arrives to finish the job and hold the ground, or stacks into an Attack Column for the final push.",
         "Mind the differing speeds: cavalry moves 2 squares a turn, infantry only 1, so infantry following behind can fall out of the Brigadier's chain if he stays with the cavalry. Keep the Brigadier central enough to hold both."
       ],
       "tip": "Before turn one, decide which single enemy unit your whole brigade will spend three turns destroying, and commit every arm to that target in sequence, not simultaneously."
@@ -152,7 +159,7 @@
     },
     {
       "num": 15,
-      "title": "The N\u00e9velle Crossing",
+      "title": "The Nivelle Crossing",
       "scope": "Full Brigade",
       "body": [
         "Named for Wellington's forcing of the Nivelle river line. A wood square is your river: cavalry cannot follow you in, and artillery loses its line of sight the moment you enter. Move a Brigade through a wood as a protected corridor rather than around it.",
@@ -169,6 +176,56 @@
         "You are trading the gun's safety for certainty. Accept that it may be charged and lost next turn, and only take the shot when the target justifies that cost."
       ],
       "tip": "Only ever a one-shot decision. If the target survives the shot, you have simply lost your screen and your gun's safety for nothing."
+    },
+    {
+      "num": 17,
+      "title": "The Flying Battery",
+      "scope": "Single Unit",
+      "body": [
+        "Embed a gun inside an all-Cavalry Brigade and it moves at Cavalry speed, able to reposition fire support wherever the fight is actually developing rather than sitting fixed on the hill you chose at deployment.",
+        "The trade-off is fragility. The moment that gun needs to cross a ploughed field its speed advantage vanishes, and the moment its Cavalry screen is broken or pulled away, it reverts to a lone Foot Artillery piece with none of the protection it relied on."
+      ],
+      "tip": "Never let the escorting Cavalry wander off to fight its own battle. A Flying Battery without its Cavalry is just a gun that got overextended."
+    },
+    {
+      "num": 18,
+      "title": "The Poacher's Snare",
+      "scope": "Single Unit",
+      "body": [
+        "Commit one Infantry unit into a wood early and Lay Ambush, using it less as a unit you expect to fight fair and more as a standing threat that shapes where the enemy is willing to path for the rest of the battle.",
+        "A single ambushed wood square can hold up an entire flank's advance if the opponent is playing cautiously, buying time elsewhere on the board for very little cost."
+      ],
+      "tip": "Don't be tempted to move the ambushing unit once it's sprung and won. If you commit the second die and advance, you've traded concealment for ground, make sure that trade is worth it."
+    },
+    {
+      "num": 19,
+      "title": "Hammer and Column",
+      "scope": "Two Units",
+      "body": [
+        "Stack two Infantry into an Attack Column and send it in frontally. If it started the fight, it wins any tie outright. The same turn, or the turn after, land a Cavalry Charge against the same target from an open angle.",
+        "Both the Column and the Charge win ties in the attacker's favour, so the target is being asked to survive two separate tie-win threats rather than one ordinary fight."
+      ],
+      "tip": "Time the two blows so the target can't simply retreat out of the Column's reach before the Charge lands. A Column that arrives a turn after the Charge has already scattered its target has wasted its extra die."
+    },
+    {
+      "num": 20,
+      "title": "The Bogged Column",
+      "scope": "Single Unit",
+      "body": [
+        "Watch for an enemy gun sited near a ploughed field without a matching Cavalry escort in its Brigade. It cannot cross that ground at all, which means its next few turns of positioning are entirely predictable.",
+        "Swing your own Cavalry wide and punish it while it's stuck, either forcing it to abandon the position or fire from a spot it can no longer safely hold."
+      ],
+      "tip": "This only works if you spot the missing escort before committing. An Artillery piece that's actually embedded in an all-Cavalry Brigade will simply ride the field penalty and reposition anyway."
+    },
+    {
+      "num": 21,
+      "title": "The Hedge and the Gun",
+      "scope": "Full Brigade",
+      "body": [
+        "Spread Infantry and Artillery across separate buildings in a hamlet rather than stacking, since the one-unit-per-building limit means no single position can reinforce a neighbour, but it also means no single assault can take out two defenders in the same attack.",
+        "Each building fights its own isolated battle. The strength of the doctrine is that an attacker has to win every one of those battles separately to clear the hamlet."
+      ],
+      "tip": "Only worth setting up if you have enough units to actually garrison two or three buildings. A single building held alone is just an ordinary defensive anchor, not a hedge."
     }
   ],
   "counters": [
@@ -196,7 +253,22 @@
       "title": "Against the Refused Flank",
       "counters": "Manoeuvre No. 14",
       "text": "The refused Brigade is deliberately under-strength. If you can reach and break it before the oblique attack resolves elsewhere, it is the weakest link on the board."
+    },
+    {
+      "title": "Against the Flying Battery",
+      "counters": "Manoeuvre No. 17",
+      "text": "Target the Cavalry screen first, not the gun. Once the escort is gone the gun is soft, slow, and stuck wherever it happens to be standing."
+    },
+    {
+      "title": "Against the Poacher's Snare",
+      "counters": "Manoeuvre No. 18",
+      "text": "Never send a valuable unit alone into contact with an unscouted wood. Screen the approach with something expendable first, or route around the wood entirely if the flank isn't worth the risk."
+    },
+    {
+      "title": "Against the Hedge and the Gun",
+      "counters": "Manoeuvre No. 21",
+      "text": "Split your attack across two buildings at once rather than grinding one. A spread-out hamlet defence can't reinforce itself, so forcing two simultaneous fights costs the defender far more than costing you one extra turn of setup."
     }
   ],
-  "pushHold": "Push when you hold a bonus die, a re-roll, or local superiority on the specific square you are fighting over. Hold when the reverse is true, or when advancing would break your own Brigadier's chain. When in doubt, hold, ground costs nothing to keep and everything to win back."
+  "pushHold": "Push when you hold a bonus die, a re-roll, a Tie-Win bonus, or local superiority on the specific square you are fighting over. Hold when the reverse is true, or when advancing would break your own Brigadier's chain. When in doubt, hold, ground costs nothing to keep and everything to win back."
 }
